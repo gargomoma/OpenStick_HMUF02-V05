@@ -28,8 +28,9 @@ ToDo: I might try to overclock the stick 🔥
 
 # WLAN:
 
-⚠️WLAN driver is missing.⚠️
+⚠️WLAN driver is missing.⚠️  Persist.bin is empty. ¯\\_(ツ)_/¯
 
+### Option1: Install it manually.
 >You need to download [WCNSS_qcom_wlan_nv.bin](https://zebra.ddscentral.org/pub/downloads/openstick/firmware/uz801_v30/modem_wifi/) and save it on _/lib/firmware/wlan/prima/_
 
 To install the driver:
@@ -37,7 +38,10 @@ To install the driver:
 sudo mkdir -p /lib/firmware/wlan/prima/
 sudo cp ~/WCNSS_qcom_wlan_nv.bin /lib/firmware/wlan/prima/
   ```
+### Option2: Replace your persist.bin
+IE: Get it from https://github.com/OpenStick/stick-blobs/ and flash it on your stick.
 
+I'm currently using [stock-uz801's](https://raw.githubusercontent.com/OpenStick/stick-blobs/refs/heads/main/stock-uz801/persist.bin).
 
 # Scripts:
 
